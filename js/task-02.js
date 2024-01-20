@@ -10,9 +10,9 @@ const ingredients = [
 const unorderedlist = document.querySelector("#ingredients");
 
 const liArray = ingredients.map((ingredient) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = ingredient;
-  listItem.classList.add("item");
+  const listItem = document.createElement("li"); // <li></li>
+  listItem.textContent = ingredient; // <li>ingridient</li>
+  listItem.classList.add("item"); //<li class="item">ingridient</li>
   return listItem;
 });
 unorderedlist.append(...liArray);
