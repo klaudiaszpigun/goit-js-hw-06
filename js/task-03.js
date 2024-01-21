@@ -13,9 +13,14 @@ const images = [
   },
 ];
 
-const list = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery");
 
-const arrayOfLi = images.flatmap((image) => {
-  const listItem = document.createElement("li");
-  listItem.createElement("img");
-});
+// markup jest to iterowanie po tablicy obiektów
+const markup = images
+  .map(
+    (image) =>
+      `<li class="gallery-item"><img src=${image.url} alt=${image.alt}></li>`
+  )
+  .join("");
+
+gallery.insertAdjacentHTML("beforeend", markup);
