@@ -37,3 +37,13 @@ button {
   width: 100%;
   height: auto;
 }
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border-radius: 50%;
+  border-width: 2px;
+}
