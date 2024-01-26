@@ -4,7 +4,8 @@ const span = document.querySelector("#name-output");
 input.addEventListener("input", inputHandler);
 
 function inputHandler() {
-  if (input.value.length !== 0) {
-    return (span.textContent = input.value);
+  if (input.value !== "") {
+    // metoda trim() usuwa spacje
+    return (span.textContent = input.value.trim());
   }
 }
