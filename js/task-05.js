@@ -8,4 +8,5 @@ function inputHandler() {
     // metoda trim() usuwa spacje
     return (span.textContent = input.value.trim());
   }
+  if (input.value === "") return (span.textContent = "");
 }

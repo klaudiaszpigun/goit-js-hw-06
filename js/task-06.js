@@ -8,5 +8,5 @@ validationInput.addEventListener("blur", () => {
   // jeśli warunek został spełniony to dodaje do elementu klase valid
   validationInput.classList.toggle("valid", valueLength >= 6);
   // jeśli warunek został spełniony to dodaje do elementu klasę invalid
-  validationInput.classList.toggle("invalid", valueLength <= 6);
+  validationInput.classList.toggle("invalid", valueLength < 6);
 });

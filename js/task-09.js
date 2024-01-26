@@ -7,11 +7,14 @@ function getRandomHexColor() {
     // dopełnia otrzymany ciąg z przodu zerami do uzyskania 6 znaków
     .padStart(6, 0)}`;
 }
-
+const span = document.querySelector(".color");
 const body = document.querySelector("body");
+const button = document.querySelector(".change-color");
 
-body.addEventListener("click", colorOfBody);
+button.addEventListener("click", colorOfBody);
 
 function colorOfBody(event) {
-  body.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  body.style.backgroundColor = color;
+  span.textContent = color;
 }
